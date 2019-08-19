@@ -1,0 +1,26 @@
+.mui-off-canvas-wrap{  
+    max-width: 720px;  
+    margin: 0 auto;  
+}
+.canvabg{
+	background: #FFFFFF;
+}
+.title {
+	margin: 0px 15px 10px;
+}
+.title+.content {
+	margin: 10px 15px 35px;
+	text-indent: 1em;
+	font-size: 14px;
+	line-height: 24px;
+}
+			
+.mui-table-view {
+	margin-bottom: 35px;
+}
+.mui-table-view-cell{
+	height: 80px;
+}
+.mui-ellipsis{
+	margin-top: 15px;
+}

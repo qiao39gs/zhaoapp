@@ -1,0 +1,17 @@
+#tab{
+	height: 0px;
+}
+#tab a{
+	height: 40px;
+}
+#msg{
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-top: 10px;
+	text-indent: 2em;
+}
+#good{
+	position: relative;
+	left: 20px;
+	width: 3px;
+}

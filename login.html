@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="css/app/login.css"/>
+		<title>login</title>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">登录</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-content-padded textarea">  
+				<form class="mui-input-group" id="form">
+					<div class="mui-input-row">
+						<label>用户名</label>
+						<input type="text" id="username" placeholder="用户名">
+					</div>
+					<div class="mui-input-row">
+						<label>密码</label>
+						<input type="password" id="userpassword" placeholder="密码">
+					</div>
+				</form>
+			</div>
+			<div class="btn" >
+				<label><input type="checkbox" name="checkbox" id="chkRem"></label><span>记住密码</span>
+				<button class="mui-btn mui-btn-primary" id="loginBtn">登录</button>
+				&nbsp;&nbsp;<button class="mui-btn mui-btn-primary" id="regBtn">注册</button>
+			</div>
+		</div>
+	</body>
+<script src="js/app/login.js"></script>
+</html>
