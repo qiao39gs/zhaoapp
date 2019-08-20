@@ -7,10 +7,10 @@
 	<script src="js/mui.min.js"></script>  
 	<link href="css/mui.min.css" rel="stylesheet"/> 
 	<link href="css/app/index.css" rel="stylesheet"/>
-
+	<link href="css/app/search.css" rel="stylesheet"/>
 </head>
 <body>
-	<header class="mui-bar mui-bar-nav">    
+	<!--<header class="mui-bar mui-bar-nav">    
 		<a id="left-menu" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
 		<a id="right-plusempty" class="mui-icon mui-icon-plusempty mui-pull-right"></a>
 		<h1 class="mui-title">APP名字？</h1>
@@ -32,6 +32,16 @@
 				<div class="mui-indicator"></div>
 			</div>
 		</div>
+	</div>
+		-->
+	<header class="mui-bar mui-bar-nav">
+		<form action="">
+			<div class="mui-input-row mui-search search" >            
+				<input type="search" class="mui-input-clear" id="search" placeholder="搜索">            
+			</div>
+		</form>
+	</header>
+	<div class="mui-content">
 		<ul class="mui-table-view" id="zlists">
 			<span id="zlist"></span>
 		</ul>
@@ -56,5 +66,6 @@
 	</nav>
 </body>
 <script src="js/app/index.js"></script>
+<script src="js/app/search.js"></script>
 <script src="js/app/indexlist.js"></script>
 </html>

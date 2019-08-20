@@ -18,7 +18,6 @@ mui.plusReady(function () {
 							'<a>'+blog[i][3]+'</a>'+
 						'</li>';
 		}
-		console.log(content);
 		t1[0].innerHTML = content;
 	},'json'
 	);
