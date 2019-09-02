@@ -2,5 +2,15 @@
 	margin:0 5px;
 	position: absolute;
 	width: 92%;
-	height: 80%;
+	box-shadow: 0px;
+}
+#se{
+	position: relative;
+}
+#slists{
+	position: absolute;
+	margin-top: 45px;
+	margin-left: -10px;
+	width: 120%;
+	background-color: white;
 }
