@@ -1,5 +1,6 @@
 mui.init();
 mui.plusReady(function () {
+	mui.toast('dd');
 	var sData = plus.webview.currentWebview();
 	var title1 = mui('#title');
 	var content = mui('#content');
@@ -13,8 +14,10 @@ mui.plusReady(function () {
 		},'json'
 	);
 	user = JSON.parse(localStorage.getItem('userdata'));
-	var ThumpAC = "thumpUser"+user[0]+"Blog"+sData.blogid;
-	var CollectAC = "collectUser"+user[0]+"Blog"+sData.blogid;
+	if(localStorage.getItem('user') != null && localStorage.getItem('user') != ""){
+		var ThumpAC = "thumpUser"+user[0]+"Blog"+sData.blogid;
+		var CollectAC = "collectUser"+user[0]+"Blog"+sData.blogid;
+	};
 	if(localStorage.getItem(ThumpAC) != null && localStorage.getItem(ThumpAC) != ""){
 		if(localStorage.getItem(ThumpAC) == "Thump"){
 			document.getElementById("good").style.color = "red";

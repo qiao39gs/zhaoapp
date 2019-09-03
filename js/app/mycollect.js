@@ -16,7 +16,7 @@ mui.plusReady(function () {
 		for (var i = 0; i < blog.length; i++) {
 			content += '<li class="mui-table-view-cell" data-id="'+i+'">'+
 							'<a>'+blog[i][3]+'</a>'+
-						'</li>';
+						'</li></br>';
 		}
 		t1[0].innerHTML = content;
 	},'json'

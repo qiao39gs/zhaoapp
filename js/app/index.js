@@ -9,7 +9,7 @@ mui.init({
 	},{
 		url:'perinf.html',
 		id:'setting',
-		styles:{top:'44px', bottom:'44px'}
+		styles:{top:'0px', bottom:'44px'}
 	}], 
 	preloadPages:[
 		{

@@ -6,52 +6,85 @@
 	<title></title>
 	<script src="js/mui.min.js"></script>  
 	<link href="css/mui.min.css" rel="stylesheet"/> 
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
 	<link href="css/app/index.css" rel="stylesheet"/>
 	<link href="css/app/search.css" rel="stylesheet"/>
 </head>
 <body>
-	<!--<header class="mui-bar mui-bar-nav">    
-		<a id="left-menu" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
-		<a id="right-plusempty" class="mui-icon mui-icon-plusempty mui-pull-right"></a>
-		<h1 class="mui-title">APP名字？</h1>
-	</header>
-	<div class="mui-content">
-		<div class="mui-slider">
-			<div class="mui-slider-group mui-slider-loop">
-				<div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="image/zslider/4.jpg" /></a></div>
-				<div class="mui-slider-item"><a href="#"><img src="image/zslider/1.jpg" /></a></div>
-				<div class="mui-slider-item"><a href="#"><img src="image/zslider/2.jpg" /></a></div>
-				<div class="mui-slider-item"><a href="#"><img src="image/zslider/3.jpg" /></a></div>
-				<div class="mui-slider-item"><a href="#"><img src="image/zslider/4.jpg" /></a></div>
-				<div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="image/zslider/1.jpg" /></a></div>
-			</div>
-			<div class="mui-slider-indicator">
-				<div class="mui-indicator mui-active"></div>
-				<div class="mui-indicator"></div>
-				<div class="mui-indicator"></div>
-				<div class="mui-indicator"></div>
-			</div>
-		</div>
-	</div>
-		-->
 	<header class="mui-bar mui-bar-nav">
-		<form action="">
-			<div class="mui-input-row mui-search search" >            
-				<input type="search" class="mui-input-clear" id="search" placeholder="搜索">            
-			</div>
-		</form>
+		<div id="se">
+			<form action="">
+				<div class="mui-input-row mui-search search" >            
+					<input type="search" class="mui-input-clear" id="search" placeholder="搜索">
+				</div>
+			</form>
+			<ul class="mui-table-view" id="slists">
+				<span id="lb"></span>
+			</ul>
+		</div>
 	</header>
-	<div class="mui-content">
+	<div class="mui-content" id="contents">
+		<ul class="mui-table-view" id="slider2s">
+			<p>
+				<span id="followlist">关注</span>
+				&emsp;&emsp;&emsp;&emsp;&emsp;
+				<span id="hotlist">热门</span>
+			</p>
+		</ul>
 		<ul class="mui-table-view" id="zlists">
+			<div class="mui-card">
+				<div class="mui-card-header mui-card-media" style="padding: 10px;">
+					<img class="header" src="image/zslider/1.jpg" class="mui-pull-left">
+					<div class="mui-media-body"style="margin-left: 40px;">
+						怎么吃饭？<span id="time">2019/9/3 22:04</span>
+						<p>作者：XXX</p>
+					</div>
+				</div>
+				<div class="mui-card-content" style="background: #2AC843; line-height: 0px;">
+					<video width="100%" height="100%" controls="controls" poster="image/zslider/1.jpg">
+						<source src="http://intertest.top/backend/static/video/1.mp4" type="video/mp4"></source>
+					</video>
+				</div>
+				<div class="mui-card-footer">
+					<div id="card-footer">
+						<span id="thump">♡</span>&emsp;
+						<span id="collect" class="mui-icon mui-icon-star"></span>&emsp;
+						<span id="share" class="mui-icon mui-icon-redo"></span>&emsp;
+						<span id="etc" class="mui-icon mui-icon-more"></span>
+					</div>
+				</div>
+			</div>
 			<span id="zlist"></span>
 		</ul>
+		<ul class="mui-table-view" id="hotlists">
+			<span id="hotlist">
+				<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right">
+								Item 1
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right">
+								 Item 2
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right">
+								 Item 3
+							</a>
+						</li>
+					</ul>
+			</span>
+		</ul>
+		<br><br><br>
 	</div>
 	<nav class="mui-bar mui-bar-tab">
 		<a class="mui-tab-item mui-active" id="home">
 			<span class="mui-icon mui-icon-home"></span>
 			<span class="mui-tab-label"></span>
 		</a>
-		<a class="mui-tab-item" id="tel">
+		<a class="mui-tab-item" id="video">
 			<span class="mui-icon mui-icon-videocam"></span>
 			<span class="mui-tab-label"></span>
 		</a>

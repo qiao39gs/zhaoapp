@@ -23,7 +23,14 @@ mui.init({
 })
 mui.plusReady(function(){
 	if(localStorage.getItem('user') != null && localStorage.getItem('user') != ""){
-		document.getElementById("login").innerHTML = localStorage.getItem('user');
+		var userdata = JSON.parse(localStorage.getItem('userdata'));
+		document.getElementById("login").innerHTML =
+			'<a><img class="mui-media-object mui-pull-left" src="image/zslider/1.jpg">'+
+				'<div class="mui-media-body">'+
+					localStorage.getItem('user')+
+					'<p class="mui-ellipsis">'+userdata[7]+'</p>'+
+				'</div>'+
+			'</a>';
 		document.getElementById('login').addEventListener('tap', function(){
 			changeView('homepage');
 		});

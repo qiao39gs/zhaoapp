@@ -35,4 +35,22 @@ mui.plusReady(function () {
 			}
 		})
 	});
+	document.getElementById("hotlist").addEventListener('tap',function(){
+		mui.toast('tap');
+		document.getElementById("zlists").style.display="none";
+		document.getElementById("hotlists").style.display="block";
+	})
+	document.getElementById("followlist").addEventListener('tap',function(){
+		mui.toast('tap');
+		document.getElementById("zlists").style.display="block";
+		document.getElementById("hotlists").style.display="none";
+	})
+	document.getElementById("contents").addEventListener("swipeleft", function() {
+		document.getElementById("zlists").style.display="none";
+		document.getElementById("hotlists").style.display="block";
+	});
+	document.getElementById("contents").addEventListener("swiperight", function() {  
+		document.getElementById("zlists").style.display="block";
+		document.getElementById("hotlists").style.display="none";
+	});
 });
