@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
 	background-color: white;
 }
@@ -49,4 +50,31 @@ body{
 #time{
 	text-align: right;
 	float: right;
+=======
+#zlists .mui-table-view {
+	margin-bottom: 35px;
+}
+#zlists .mui-table-view-cell{
+	height: 80px;
+}
+#zlists .mui-ellipsis{
+	margin-top: 15px;
+}
+.mui-content{
+	margin-top: -15px;
+}
+#slider2s{
+	text-align: center;
+	box-shadow: 0px;
+}
+#slider2s p{
+	font-size: 20px;
+	position: relative;
+	margin-top: auto;
+	paddint-top: 50px;
+	height: 32px;
+}
+#zlists{
+	margin-top: -17px;
+>>>>>>> 7b2fd477bfb18c8db7075009f3b9408d3ea3d776
 }
